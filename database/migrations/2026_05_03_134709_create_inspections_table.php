@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('fruit_id')->constrained('fruits', 'id')->onDelete('restrict');
             $table->string('sku');
-            $table->string('drive');
             $table->string('loading_area');
             $table->datetime('transport_departure');
             $table->datetime('transport_arrival');
